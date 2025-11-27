@@ -48,7 +48,7 @@ network_g:
   embed_dim: 32
 
   train_patch: 128
-  eps: !!float 1e-4
+  eps: !!float 1e-1
 
 
 # path
@@ -68,7 +68,7 @@ train:
     type: CosineAnnealingRestartCyclicLR
     periods: [92000, 208000]       
     restart_weights: [1,1]
-    eta_mins: [0.0001,0.000001]   
+    eta_mins: [0.0003,0.000001]
   
 
   
@@ -79,7 +79,7 @@ train:
 
   optim_g:
     type: Adam
-    lr: !!float 4e-4
+    lr: !!float 2e-4
     betas: [0.9, 0.999]
   
   # losses

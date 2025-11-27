@@ -1,7 +1,7 @@
 # SAIGFormer: A Spatially-Adaptive Illumination-Guided Network for Low-Light Image Enhancement
 
 ## Framework
-![framework](./figure/architecture.jpg)
+![framework](./figure/architecture.png)
 
 ## Abstract
 Recent Transformer-based low-light enhancement methods have made promising progress in recovering global illumination. However, they still struggle with non-uniform lighting scenarios, such as backlit and shadow, appearing as over-exposure or inadequate brightness restoration. To address this challenge, we present a Spatially-Adaptive Illumination-Guided Transformer (SAIGFormer) framework that enables accurate illumination restoration. Specifically, we propose a dynamic integral image representation to model the spatially-varying illumination, and further construct a novel Spatially-Adaptive Integral Illumination Estimator (SAI²E). Moreover, we introduce an Illumination-Guided Multi-head Self-Attention (IG-MSA) mechanism, which leverages the illumination to calibrate the lightness-relevant features toward visual-pleased illumination enhancement. Extensive experiments on five standard low-light datasets and a cross-domain benchmark (LOL-Blur) demonstrate that our SAIGFormer significantly outperforms state-of-the-art methods in both quantitative and qualitative metrics. In particular, our method achieves superior performance in non-uniform illumination enhancement while exhibiting strong generalization capabilities across multiple datasets.
